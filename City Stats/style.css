@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    font-family:'poppins',sans-serif;
+    background-color: #f5e8ba;
+}
+wrapper div,#wrapper h2{
+    display: flex;
+    justify-content: center;
+}
+
+select{
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top:30px;
+    height: 2.5em;
+    width:250px;
+    padding-left: 10px;
+    }
+
+h2{
+    color:#ffeba7;
+    letter-spacing: 1px;
+}
+input{
+    border-radius: 5px;
+    border:2px solid
+}

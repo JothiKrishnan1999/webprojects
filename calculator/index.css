@@ -1,0 +1,74 @@
+body{
+        background-color: #030301;
+        margin: 0;
+        width: 100dvw;
+        height: 100dvh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+}
+
+.calc-container{
+        min-width:30%;
+        max-width:50%;
+        height: 80%;
+        background-color: #f0e8e8;
+        box-shadow: 0px 0px 35px 6px rgb(241, 238, 238);
+}
+
+.output-container{
+        margin: 3px;
+        height: 25%;
+        display: grid;
+        gap: 0.09rem;
+        grid-template-columns: 2ch auto;
+        grid-template-rows: 60% auto;
+}
+
+.output-container > div{
+        overflow: hidden;
+        padding-top: 0.8rem;
+        padding-right: 0.2rem;
+        /* direction: rtl; */
+        text-align: right;
+        box-sizing: border-box;
+}
+#output-item1{
+        font-size: 1.1em;
+        font-weight: bold;
+        grid-column: span 2;
+}
+#output-item2{
+        font-weight: bolder;
+        font-size: 1.1em;
+        text-align: center;
+        padding-top:0.5rem;
+}
+#output-item3{
+        padding-right: 0.2em;
+        border-top:0.1em solid rgba(197, 103, 30, 0.774);
+}
+
+.button-container{
+        display: grid;
+        height: 73%;
+        grid-template-columns: auto auto auto auto;
+}
+
+.btn{
+        margin:0rem;
+        background-color: #b11676;
+        border: 0;
+}
+.btn:hover{
+   background-color: rgb(10, 160, 219);
+   color:white;
+}
+#btn-ac , #btn-eq{
+        grid-column: span 2;
+}
+.btn-symbol{
+        color:rgb(243, 119, 4);
+        font-weight: bold;
+}

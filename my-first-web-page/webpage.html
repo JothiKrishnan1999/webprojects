@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- <style>h1{  -->
+  <!-- text-align: center;  -->
+  <!-- color: darkblue;  -->
+  <!-- }</style>  -->
+</head>
+
+<body>
+  <div id="navbar">
+    <img id="logo" alt="freecodecamp Logo"
+      src="data:image/png;base64,
+        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"
+      alt="" />
+  </div>
+  <img id="banner" src="banner.jpg" alt="banner" height="240" />
+
+  <!-- <H1 style="text-align: center; color: darkblue;"> -->
+  <h1>About Program</h1>
+
+  <!-- </H1> -->
+  <div id="about">
+    <div id="description">
+      <p>
+        FreeCodeCamp is a non-profit organization that consists of an interactive learning web platform,
+        an online community forum, chat rooms, online publications, and local organizations that intend
+        to make learning software development accessible to anyone.
+        <br>
+        <br>
+        FreeCodeCamp offers a comprehensive curriculum on web development, including courses on
+        HTML, CSS, JavaScript, React, Node.js, and more. Students learn by completing interactive
+        challenges and building real-world projects. As they progress, they earn free verified
+        certifications that demonstrate their skills to potential employers.
+      </p>
+    </div>
+
+    <div id="team">
+      <img id="team image" src="team.jpg" alt="team" height="200">
+    </div>
+  </div>
+
+
+  <div id="jobs">
+    <h2><b>Industries Offering Courses</b></h2>
+    <li>
+      <b><a href="https://youtu.be/zJSY8tbf_ys?feature=shared" target="_blank">FrontEnd Developer - Bootcamp</a></b>
+    </li>
+    <br>
+    <li>
+      <b><a href="https://youtu.be/A74TOX803D0?feature=shared" target="_blank">BackEnd Developer - Bootcamp</a></b>
+    </li>
+    <br>
+    <li>
+      <b><a href="https://youtu.be/ua-CiDNNj30?feature=shared" target="_blank">Data Scientist - Bootcamp</a></b>
+    </li>
+    <br>
+    <br>
+    <br>
+
+    <div>
+    <h1>Job Roles & location </h1>
+
+      <a href="mailto:jothikrishnan2015@gmail.com?subject=frontend" class="apply" target="_blank">Apply</a>
+      <h3 class="jobs roles">FrontEnd Developer</h3>
+      <div class="location">Chennai,India</div>
+       
+      <a href="mailto:jothikrishnan2015@gmail.com?subject=backend" class="apply" target="_blank">Apply</a>
+      <h3 class="jobs roles">BackEnd Developer</h3>
+      <div class="location">Delhi,India</div>
+
+      <a href="mailto:jothikrishnan2015@gmail.com?subject=datascientist" class="apply" target="_blank">Apply</a>
+      <h3 class="jobs roles">Data Scientist</h3>
+      <div class="location">Mumbai, India</div>
+
+      <div id="footer">
+        <ul id="footer-links">
+          <li>
+            <h3>
+              <b><a href="https://www.freecodecamp.org/learn/front-end-development-libraries" target="_blank">Courses
+                </a></b>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <b><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+                  target="_blank">Projects</a></b>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <b><a href="https://www.youtube.com/@freecodecamp" target="_blank">YouTube</a></b>
+            </h3>
+          </li>
+        </ul>
+        <span class="copyright">©2023, freecodecamp</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
